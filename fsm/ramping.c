@@ -41,7 +41,7 @@ inline void set_level_aux_leds(uint8_t level) {
 #include "anduril/aux-leds.h"  // for rgb_led_voltage_readout()
 inline void set_level_aux_rgb_leds(uint8_t level) {
     if (! go_to_standby) {
-        if (level > 0) {
+        if (level < 50) {
             rgb_led_voltage_readout(level > USE_AUX_RGB_LEDS_WHILE_ON);
         } else {
             rgb_led_set(0);
