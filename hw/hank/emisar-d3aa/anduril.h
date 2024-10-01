@@ -38,7 +38,8 @@
 #define MAX_1x7135            40
 #define HDR_ENABLE_LEVEL_MIN  41
 
-#define DEFAULT_LEVEL         50
+//set default level to MAX- to be turbo when turned on with clicky
+#define DEFAULT_LEVEL         MAX_LEVEL
 
 // no PWM, so MCU clock speed can be slow
 #define HALFSPEED_LEVEL      41
@@ -48,15 +49,17 @@
 // to avoid overloading firmware flashing adapters
 #define WEAK_BATTERY_TEST_MAX_LEVEL       75
 
+//RAMP FLOOR SMOOTH AND DISCRETE TO 1 to allow ultra moonlight
+//CHANGE CEILING to 150??
 #define RAMP_SMOOTH_FLOOR    1
 #define RAMP_SMOOTH_CEIL     130  // 50% power
 // 10 30 [50] 70 90 110 130
-#define RAMP_DISCRETE_FLOOR  10
+#define RAMP_DISCRETE_FLOOR  1
 #define RAMP_DISCRETE_CEIL   130
 #define RAMP_DISCRETE_STEPS  7
 
 // 10 [40] 70 100 130
-#define SIMPLE_UI_FLOOR      10
+#define SIMPLE_UI_FLOOR      1
 #define SIMPLE_UI_CEIL       130
 #define SIMPLE_UI_STEPS      5
 
