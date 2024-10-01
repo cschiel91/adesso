@@ -73,6 +73,9 @@
 
 
 // UI
+// Start at memorized level to use tail clicky
+#define START_AT_MEMORIZED_LEVEL
+
 
 // Allow 3C in Simple UI for switching between smooth and stepped ramping
 #define USE_SIMPLE_UI_RAMPING_TOGGLE
