@@ -12,7 +12,7 @@
 #undef RGB_LED_OFF_DEFAULT
 #endif
 //#define RGB_LED_OFF_DEFAULT 0x18  // low, rainbow
-#define RGB_LED_OFF_DEFAULT 0x19 low, voltage
+#define RGB_LED_OFF_DEFAULT 0x19 //low, voltage
 
 // half a second per color in rainbow mode
 //#define RGB_RAINBOW_SPEED 0x03
