@@ -100,9 +100,12 @@
 #define POLICE_COLOR_STROBE_CH2        CM_AUXBLU
 
 // the aux LEDs are front-facing, so turn them off while main LEDs are on
-#ifdef USE_INDICATOR_LED_WHILE_RAMPING
-#undef USE_INDICATOR_LED_WHILE_RAMPING
-#endif
+//#ifdef USE_INDICATOR_LED_WHILE_RAMPING
+//#undef USE_INDICATOR_LED_WHILE_RAMPING
+//#endif
+
+//Changed Aux led to be on during ramping
+#define USE_INDICATOR_LED_WHILE_RAMPING
 
 
 // Misc
