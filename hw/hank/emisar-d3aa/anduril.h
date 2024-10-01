@@ -112,7 +112,7 @@
 
 //Changed Aux led to be on during ramping
 #define USE_INDICATOR_LED_WHILE_RAMPING
-#define USE_AUX_RGB_LEDS_WHILE_ON
+#define USE_AUX_RGB_LEDS_WHILE_ON 1
 
 // Misc
 
