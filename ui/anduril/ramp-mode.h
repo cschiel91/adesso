@@ -140,12 +140,13 @@ void set_level_and_therm_target(uint8_t level);
 
 
 // brightness control
-uint8_t memorized_level = DEFAULT_LEVEL;
+uint8_t memorized_level = 150; //Was = DEFAULT_LEVEL, changed to 150 for Adesso
 #ifdef USE_MANUAL_MEMORY
     void manual_memory_restore();
     void manual_memory_save();
     #ifndef DEFAULT_MANUAL_MEMORY
-        #define DEFAULT_MANUAL_MEMORY 0
+        //default_manual_memory was 0, changed to 150 for Adesso
+        #define DEFAULT_MANUAL_MEMORY 150
     #endif
     #ifdef USE_MANUAL_MEMORY_TIMER
         #ifndef DEFAULT_MANUAL_MEMORY_TIMER
