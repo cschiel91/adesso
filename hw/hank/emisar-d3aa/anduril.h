@@ -39,7 +39,7 @@
 #define HDR_ENABLE_LEVEL_MIN  41
 
 //set default level to MAX- to be turbo when turned on with clicky
-#define DEFAULT_LEVEL         MAX_LEVEL
+#define DEFAULT_LEVEL 150
 
 // no PWM, so MCU clock speed can be slow
 #define HALFSPEED_LEVEL      41
