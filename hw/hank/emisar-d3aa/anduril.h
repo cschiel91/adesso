@@ -52,15 +52,15 @@
 //RAMP FLOOR SMOOTH AND DISCRETE TO 1 to allow ultra moonlight
 //CHANGE CEILING to 150??
 #define RAMP_SMOOTH_FLOOR    1
-#define RAMP_SMOOTH_CEIL     130  // 50% power
+#define RAMP_SMOOTH_CEIL     150  // 50% power
 // 10 30 [50] 70 90 110 130
 #define RAMP_DISCRETE_FLOOR  1
-#define RAMP_DISCRETE_CEIL   130
+#define RAMP_DISCRETE_CEIL   150
 #define RAMP_DISCRETE_STEPS  7
 
 // 10 [40] 70 100 130
 #define SIMPLE_UI_FLOOR      1
-#define SIMPLE_UI_CEIL       130
+#define SIMPLE_UI_CEIL       150
 #define SIMPLE_UI_STEPS      5
 
 // don't blink mid-ramp
@@ -79,10 +79,11 @@
 // Start at memorized level to use tail clicky
 #define START_AT_MEMORIZED_LEVEL
 
-
+//Adesso will not change ramping mode, commented this out
 // Allow 3C in Simple UI for switching between smooth and stepped ramping
-#define USE_SIMPLE_UI_RAMPING_TOGGLE
+//#define USE_SIMPLE_UI_RAMPING_TOGGLE
 
+//Adesso will not have 2 click turbo, will comment this out, leaving in to test if turbo is actually working
 #define DEFAULT_2C_STYLE 1 // enable 2 click turbo
 
 
@@ -110,9 +111,9 @@
 //#undef USE_INDICATOR_LED_WHILE_RAMPING
 //#endif
 
-//Changed Aux led to be on during ramping
+//Changed Aux led to be on during ramping for Adesso
 #define USE_INDICATOR_LED_WHILE_RAMPING
-#define USE_AUX_RGB_LEDS_WHILE_ON 1
+#define USE_AUX_RGB_LEDS_WHILE_ON 2 //trying this to see why LEDs aren't on on 219/519 lights
 
 // Misc
 
