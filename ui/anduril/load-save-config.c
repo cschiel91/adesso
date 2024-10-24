@@ -26,7 +26,7 @@ void save_config() {
 
 #ifdef START_AT_MEMORIZED_LEVEL
 void save_config_wl() {
-    eeprom_wl[0] = memorized_level;
+    eeprom_wl[0] = 150; //was = memorized_level, changed to 150 for Adesso
     save_eeprom_wl();
 }
 #endif
